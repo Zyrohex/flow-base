@@ -1,0 +1,23 @@
+{
+    "name": "flow base",
+    "author": "nmartin84",
+    "version": "0.1.2",
+    "description": "A minimal theme that comes with 30+ color schemes.",
+    "logseq": {
+        "themes": [
+            {
+                "name": "Default",
+                "url": "./src/palettes/default.css",
+                "description": "Light Default with Improvements",
+                "mode": "light"
+            },
+            {
+                "name": "Default",
+                "url": "./src/palettes/default.css",
+                "description": "Dark Default with Improvements",
+                "mode": "dark"
+            }
+        ],
+        "id": "flow-base"
+    }
+}

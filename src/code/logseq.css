@@ -1,0 +1,70 @@
+/******************************,
+**    Page References    **
+******************************/
+.page-reference .bracket {
+    opacity: 0.3;
+    color: hsl(var(--cl-text-color), 1);
+}
+.ls-block .page-reference:hover {
+    background-color: transparent !important;
+    color: var(--ls-primary-text-color);
+}
+
+/******************************,
+**    Block References    **
+******************************/
+:not(.whiteboard-shape) .block-ref {
+    border-bottom: 1px solid hsl(var(--cl-color-1), 0.5);
+    background-color: hsl(var(--cl-color-2), 0);
+    border-radius: 0px;
+    transition: 0.2s;
+    padding: 0px 0px;
+}
+.block-ref mark {
+    padding: 0px 1px;
+    border-radius: 0px;
+}
+.block-ref .external-link {
+    text-underline-offset: 4px !important;
+}
+.block-ref .block-ref, .block-ref {
+    border-bottom: 0px solid !important;
+}
+.block-marker + .block-ref-wrap > div > .block-ref .block-marker, .block-marker + .block-ref-wrap > div > .block-ref .form-checkbox {
+    display: none;
+}
+/* Block reference broken links */
+a.warning, div.warning:not(.admonitionblock), p.warning, span.warning {
+    background-color: hsl(var(--cl-color-3));
+    color: var(--bg-color);
+}
+span.warning:before {
+    content: "\eb46";
+    margin-right: 5px;
+}
+/******************************
+**    Reference Panel    **
+******************************/
+
+/******************************
+**    Embeds    **
+******************************/
+
+/******************************
+**    Block Children Border    **
+******************************/
+
+.block-children-left-border {
+    background-color: var(--cl-children-left-border, transparent);
+}
+.block-children {
+    border-left-color: var(--cl-children-border-color, var(--ls-guideline-color));
+    border-left-width: 1px;
+}
+/* ==========================================================================
+Block Color Styling
+========================================================================== */
+.inline[style*="color"] .tag {
+    background-color: transparent;
+    padding: 0px;
+}
